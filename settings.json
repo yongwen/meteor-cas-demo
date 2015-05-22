@@ -10,5 +10,6 @@
         "popupWidth": 810,
         "popupHeight": 610
     }
-  }
+  },
+  "allowed_users" : ["test1", "test2"]
 }
