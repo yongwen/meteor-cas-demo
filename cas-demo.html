@@ -1,0 +1,16 @@
+<head>
+  <title>cas-demo</title>
+</head>
+
+<body>
+  {{> hello }}
+</body>
+
+<template name="hello">
+  <h1>Hello {{ currentUser.profile.name }} ! </h1>
+    {{#if currentUser}}
+        <button class="logout" onclick="Meteor.logout();return false;"> Logout </button>
+    {{else}}
+        <button class="login" onclick="Meteor.loginWithCas();return false;"> CAS Login </button>
+    {{/if}}
+</template>
